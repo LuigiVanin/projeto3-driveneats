@@ -14,13 +14,11 @@ function check() {
     }
 
     button.classList.add("selected");
-    console.log(selected);
     return true;
 }
 
 function selectItem(element, id, name, cost) {
     let dish = element.parentElement.children;
-    console.log(id, name, cost);
 
     if (element.classList.contains("selected") && selected[id].name === name) {
         selected[id].name = "";

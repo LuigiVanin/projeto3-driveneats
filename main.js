@@ -66,8 +66,19 @@ function cancel() {
 }
 
 function ok() {
+    let userData = {
+        name: "",
+        addr: "",
+    };
+
+    userData.name = prompt("Porfavor, forneça seu nome :)");
+    userData.addr = prompt(" Porfavor, seu endereço :)");
+
     let ans = selected[0].cost + selected[1].cost + selected[2].cost;
     let msg = `Olá, gostaria de fazer o pedido:
+    Nome: ${userData.name}
+    Endereço: ${userData.addr}
+    
     - Prato: ${selected[0].name}
     - Bebida: ${selected[1].name}
     - Sobremesa: ${selected[2].name}

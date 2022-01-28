@@ -9,10 +9,11 @@ function check() {
     for (let i = 0; i < selected.length; i++) {
         if (selected[i].name === "") {
             button.classList.remove("selected");
+            button.innerText = "Selecione os 3 itens para fechar o pedido";
             return false;
         }
     }
-
+    button.innerText = "Confirmar pedido";
     button.classList.add("selected");
     return true;
 }
@@ -74,6 +75,6 @@ function ok() {
 
     msg = encodeURIComponent(msg);
 
-    let tel = "558481517034";
+    let tel = "558494717742";
     window.location.replace(`https://wa.me/${tel}?text=${msg}`);
 }

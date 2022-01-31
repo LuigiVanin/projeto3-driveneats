@@ -28,20 +28,19 @@
         <h1 class="title">
             Primeiro, seu prato
         </h1>
-        <div class="carousel prato">
-
+        <div class="carousel prato" data-identifier="dishes">
             <div class="carousel__row">
                 <div class="dish" onclick="selectItem(this, 0, 'Picanha', 35.50)" data-identifier="food-option">
                     <img src="./assets/picanha.jpg" alt="prato" class="dish-img">
                     <div class="dish__info">
-                        <h1>
+                        <h1 data-identifier="food-title">
                             Picanha
                         </h1>
                         <p>
                             Picanha, tá caro, mas tá aí!
                         </p>
                     </div>
-                    <div class="dish__cost">
+                    <div class="dish__cost" data-identifier="food-price">
                         R$ 35,50
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
@@ -50,14 +49,14 @@
                 <div class="dish" onclick="selectItem(this, 0, 'Frango', 9.90)" data-identifier="food-option">
                     <img src=" ./assets/frango_yin_yang 1.png" alt="prato" class="dish-img">
                     <div class="dish__info">
-                        <h1>
+                        <h1 data-identifier="food-title">
                             Frango Ying Yang
                         </h1>
                         <p>
                             Um pouco de batata, um pouco de salada
                         </p>
                     </div>
-                    <div class="dish__cost">
+                    <div class="dish__cost" data-identifier="food-price">
                         R$ 14,90
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
@@ -66,14 +65,14 @@
                 <div class="dish" onclick="selectItem(this, 0, 'Carne Simple', 18.90)" data-identifier="food-option">
                     <img src="./assets/carne.jpg" alt="prato" class="dish-img">
                     <div class="dish__info">
-                        <h1>
+                        <h1 data-identifier="food-title">
                             Carne Simple
                         </h1>
                         <p>
                             Carne simple, gostosa e simple :)
                         </p>
                     </div>
-                    <div class="dish__cost">
+                    <div class="dish__cost" data-identifier="food-price">
                         R$ 18,90
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
@@ -81,14 +80,14 @@
                 <div class="dish" onclick="selectItem(this, 0, 'Linguica', 15.00)" data-identifier="food-option">
                     <img src="./assets/linguica.jpg" alt="prato" class="dish-img">
                     <div class="dish__info">
-                        <h1>
+                        <h1 data-identifier="food-title">
                             Linguição
                         </h1>
                         <p>
                             Linguiça fatiada, delicinha, bom!
                         </p>
                     </div>
-                    <div class="dish__cost">
+                    <div class="dish__cost" data-identifier="food-price">
                         R$ 15,00
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
@@ -100,19 +99,19 @@
             Agora, sua bebida
         </h1>
 
-        <div class="carousel">
+        <div class="carousel bebida" data-identifier="drinks">
             <div class="carousel__row">
                 <div class="dish" onclick="selectItem(this, 1, 'Coca-Cola', 6.90)" data-identifier="food-option">
                     <img src="./assets/coquinha_gelada.png" alt="prato" class="dish-img">
                     <div class="dish__info">
-                        <h1>
+                        <h1 data-identifier="food-title">
                             Coca-Cola
                         </h1>
                         <p>
                             Uma coquinha geladinha no limite
                         </p>
                     </div>
-                    <div class="dish__cost">
+                    <div class="dish__cost" data-identifier="food-price">
                         R$ 6,90
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
@@ -121,14 +120,14 @@
                 <div class="dish" onclick="selectItem(this, 1, 'Suco de Laranja', 7.50)" data-identifier="food-option">
                     <img src="./assets/laranja.jpeg" alt="prato" class="dish-img">
                     <div class="dish__info">
-                        <h1>
+                        <h1 data-identifier="food-title">
                             Suco de Laranja
                         </h1>
                         <p>
                             Naquele pique, gelado e natural
                         </p>
                     </div>
-                    <div class="dish__cost">
+                    <div class="dish__cost" data-identifier="food-price">
                         R$ 7,50
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
@@ -137,14 +136,14 @@
                 <div class="dish" onclick="selectItem(this, 1, 'Guarana', 4.90)" data-identifier="food-option">
                     <img src="./assets/guara.jpeg" alt="prato" class="dish-img">
                     <div class="dish__info">
-                        <h1>
+                        <h1 data-identifier="food-title">
                             Guaraná
                         </h1>
                         <p>
                             Guaraná, simplesmente guaraná
                         </p>
                     </div>
-                    <div class="dish__cost">
+                    <div class="dish__cost" data-identifier="food-price">
                         R$ 4,90
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
@@ -153,14 +152,14 @@
                 <div class="dish" onclick="selectItem(this, 1, 'Água', 2.90)">
                     <img src="./assets/agua-copo.jpeg" alt="prato" class="dish-img" data-identifier="food-option">
                     <div class="dish__info">
-                        <h1>
+                        <h1 data-identifier="food-title">
                             Água
                         </h1>
                         <p>
                             Somente água, a melhor coisa que tem
                         </p>
                     </div>
-                    <div class="dish__cost">
+                    <div class="dish__cost" data-identifier="food-price">
                         R$ 2,90
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
@@ -172,19 +171,19 @@
             Por fim, sua sobremesa
         </h1>
 
-        <div class="carousel">
+        <div class="carousel sobremesa" data-identifier="desserts">
             <div class="carousel__row">
                 <div class="dish" onclick="selectItem(this, 2, 'Torta de Limao', 11.90)" data-identifier="food-option">
                     <img src="./assets/torta.jpeg" alt="prato" class="dish-img">
                     <div class="dish__info">
-                        <h1>
+                        <h1 data-identifier="food-title">
                             Torta de Limão
                         </h1>
                         <p>
                             Torta com sabor limão, não tão doce
                         </p>
                     </div>
-                    <div class="dish__cost">
+                    <div class="dish__cost" data-identifier="food-price">
                         R$ 14,90
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
@@ -193,14 +192,14 @@
                 <div class="dish" onclick="selectItem(this, 2, 'Pudim', 10.90)" data-identifier="food-option">
                     <img src="./assets/pudim.jpeg" alt="prato" class="dish-img">
                     <div class="dish__info">
-                        <h1>
+                        <h1 data-identifier="food-title">
                             Pudim
                         </h1>
                         <p>
                             Pudim fofin e gostosin, bodimai
                         </p>
                     </div>
-                    <div class="dish__cost">
+                    <div class="dish__cost" data-identifier="food-price">
                         R$ 10,90
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
@@ -210,14 +209,14 @@
                     data-identifier="food-option">
                     <img src="./assets/beijinho.jpg" alt="prato" class="dish-img">
                     <div class="dish__info">
-                        <h1>
+                        <h1 data-identifier="food-title">
                             Bolo de Beijinho
                         </h1>
                         <p>
                             Bolo de massa com recheio de beijinho
                         </p>
                     </div>
-                    <div class="dish__cost">
+                    <div class="dish__cost" data-identifier="food-price">
                         R$ 20,90
                         <ion-icon name="checkmark-circle"></ion-icon>
                     </div>
@@ -233,7 +232,7 @@
     </footer>
 
     <div class="result">
-        <div class="result__box">
+        <div class="result__box" data-identifier="confirmation-dialog">
             <h2>
                 Confirme seu pedido
             </h2>
